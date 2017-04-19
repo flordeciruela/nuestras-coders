@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: courier, sans-serif;
+}
+
+body > div {
+	margin: 5% auto;
+	width: 550px;
+}
+
+.container-coder {
+	display: inline-block;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin: 15px;
+	text-align: center;
+}
+
+.container-coder h2 {
+	left: 0;
+}
+
+img {
+	display: block;
+	width: 150px;
+	height: 150px;
+}
+
+.text {
+	color: white;
+	font-size: 11px;
+	position: absolute;
+	bottom: 7px;
+	right: 7px;
+}
