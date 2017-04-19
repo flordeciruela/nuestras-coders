@@ -11,7 +11,10 @@ function crearGrid(){
 	var h2 = document.createElement("h2");
 	var title = document.createTextNode("Nuestras coders");
 	h2.appendChild(title);
+	var line = document.createElement("div");
+	line.classList.add("line");
 	gridContainer.appendChild(h2);
+	gridContainer.appendChild(line);
 
 		for (var i = 0; i < coders.length; i++) {
 
@@ -19,6 +22,7 @@ function crearGrid(){
 			grid.classList.add("container-coder");
 			var photo = document.createElement("img");
 			photo.setAttribute("src", ruta + coders[i].foto);
+			photo.setAttribute("alt", coders[i].nombre);
 			var text = document.createElement("div");
 			text.classList.add("text");
 			text.innerHTML = coders[i].nombre;
